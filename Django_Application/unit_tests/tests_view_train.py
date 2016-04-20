@@ -62,8 +62,8 @@ class TestViewTrain(TestCase):
         # User Sentiment should be an array
         self.assertIn("list", str(type(json_status["user_sentiment"])))
 
-        # Facebook Count should be 47
-        self.assertEqual(json_status["facebook_count"], 47)
+        # Facebook Count should be 54
+        self.assertEqual(json_status["facebook_count"], 54)
 
         # Yelp Message should be no need for extraction
         self.assertEqual(json_status["yelp_message"], "No need for extraction, already have enough reviews")
