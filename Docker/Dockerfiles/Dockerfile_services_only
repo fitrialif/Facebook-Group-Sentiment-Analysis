@@ -68,7 +68,7 @@ USER root
 # Wierd issue with ssl key
 RUN cp /etc/ssl/private/ssl-cert-snakeoil.key /ssl-cert-snakeoil.key
 RUN chmod 777 /
-RUN chmod 640 /ssl-cert-snakeoil.key
+RUN chmod 600 /ssl-cert-snakeoil.key
 RUN chown postgres:postgres /ssl-cert-snakeoil.key
 #===========================End Install Postgres===============================
 
